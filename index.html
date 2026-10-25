@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Game</title>
+    <meta name="theme-color" content="#f7f5ef">
+    <title>Water Rescue | charity: water</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the Charity Water Game Prototype</h1>
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="charity: water home">
+            <img src="img/cw_logo_horizontal.png" alt="charity: water">
+        </a>
+        <p class="header-note">Water Rescue</p>
+        <p class="high-score">High score <strong id="high-score">0</strong></p>
+        <button class="header-reset" id="reset-game" type="button">Reset game</button>
+    </header>
+    <main id="game" class="game-shell" aria-live="polite"></main>
     <script src="script.js"></script>
 </body>
 </html>
